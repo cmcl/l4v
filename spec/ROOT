@@ -26,6 +26,14 @@ chapter "Specifications"
  * Abstract Specification
  *)
 
+(* SMOS Spec session *)
+session SSpec in "smos" = Word_Lib +
+  sessions
+   "HOL-Library"
+   Lib
+  theories
+   "Syscall_S"
+
 (* Session on which most other sessions build. *)
 session ASpec in "abstract" = Word_Lib +
   options [document=pdf]

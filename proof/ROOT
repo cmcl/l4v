@@ -80,6 +80,12 @@ session AInvs in "invariant-abstract" = ASpec +
     "KernelInit_AI"
     "$L4V_ARCH/ArchDetSchedSchedule_AI"
 
+session SInvs in "smos-invariant" = SSpec +
+  sessions
+    Lib
+  theories
+    "Syscall_SI"
+
 (*
  * C Refinement proof.
  *)
